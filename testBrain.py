@@ -3,7 +3,8 @@
 #       By:Low Yew Qing
 #Objective:To Test the Neural Network That Was Created in neuralnetwork.py and Implementing The User Interface
 #    Edits:29/03/2020--Added a way to see accuracy of the network. There's a bug because the prediction is always the same.
-#          01/03/2020--Moved the accuracy tester to neuralnetwork.py based on Sebastian Lague's tutorial.
+#          01/04/2020--Moved the accuracy tester to neuralnetwork.py based on Sebastian Lague's tutorial.
+#          03/04/2020--Tried testing the cost function. Took to long to run over the training images.
 #
 ##############################################################################################################################################################################################################################################################################################################################################################################################################################################################################
 import neuralnetwork as nn

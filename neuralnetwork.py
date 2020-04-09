@@ -4,6 +4,8 @@
 #Objective:To Create A Simple Neural Network That Can Recognise Handwritten Digits
 #    Edits:29/3/2020-- Tried to do the cost function.
 #           1/4/2020-- Added way to find out accuracy, attempted the cost function
+#           3/4/2020-- Added the cost function, ran it but took to long to compute. Computer was overheating.
+#           9/4/2020--
 #
 ################################################################################################################################
 import numpy as np
@@ -46,12 +48,11 @@ class ArtificialBrain:
 
     """Quadratic Cost Function"""
     def cost(self,input, trueLabels, runNumber):
-        return (np.argmax(trueLabels[runNumber]) - np.argmax(self.predict(input)[runNumber]))**2
+        outputSqrt = trueLabels[runNumber] - (self.predict(input)[runNumber])
+        return outputSqrt * outputSqrt
         #y(i) = (0,0,0,0,1,0,0,0,0,0)Transposed
         #x = 28 x 28 = 784 dimensional vector for image
         #C(weights, biases) = sum of (y(i) - prediction(x)) divided 2*number of pixels/ training inputs
-
-
 
     """Activation Function"""
     @staticmethod
