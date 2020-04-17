@@ -1,11 +1,11 @@
 ################################################################################################################################
 #
-#       By:Low Yew Qing
+#       By:@YQDevelops
 #Objective:To Create A Simple Neural Network That Can Recognise Handwritten Digits
 #    Edits:29/3/2020-- Tried to do the cost function.
 #           1/4/2020-- Added way to find out accuracy, attempted the cost function
 #           3/4/2020-- Added the cost function, ran it but took to long to compute. Computer was overheating.
-#           9/4/2020--
+#           9/4/2020-- Changed to Hadamard Product instead of matmul
 #
 ################################################################################################################################
 import numpy as np
